@@ -1,0 +1,13 @@
+<%# Verification page for deletion of a contact; render contact info and form submission to verify delete %>
+
+<div>
+    <p>You are about to delete</p>
+    <p><%= @contact.first_name %> <%= @contact.last_name %></p>
+    <p>and all associated data. Are you sure?</p>
+
+    <form action="/contacts/delete?id=<%= @contact.id%>" method="post">
+        <input type="hidden" name="id" value=<% @contact.id %>>
+        <input type="submit" value="Delete" class="button">
+        <a href="/contacts" class="button">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <%# Search feature %>
+        <form action="/contacts/index" method="post">
+          <input type="text" name="search" class="search" placeholder="Search">
+          <input type="submit" value="Go" class="button">
+        </form>
+        
+        <br>
+        <h3>Contacts</h3>
+        
+        <% @contacts.each do |c| %>
+            <div>
+                <a class="contact" href="/contacts/details?id=<%= c.id %>"><%= c.first_name %> <%= c.last_name %></a>
+            </div>
+        <% end %>
+        </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <br>
+        <h3>Edit Contact</h3>
+        <div>
+            <form action="/contacts/update" method ="post">
+                <br>
+                <input type="text" name="first_name" value="<%= @contact.first_name %>" placeholder="First Name">
+                <input type="text" name="last_name" value="<%= @contact.last_name %>" placeholder="Last Name">
+                <br>
+                <input type="text" name="phone" value="<%= @contact.phone %>" placeholder="Phone">
+                <input type="text" name="email" value="<%= @contact.email %>" placeholder="Email">
+                <br>
+                <input type="text" name="address" value="<%= @contact.address %>" placeholder="Address">
+                <input type="text" name="city" value="<%= @contact.city %>" placeholder="City">
+                <br>
+                <input type="text" name="state" value="<%= @contact.state %>" placeholder="State">
+                <input type="text" name="zip" value="<%= @contact.zip %>" placeholder="Zip">
+                <br>
+                <input type="hidden" name="id" value="<%= @contact.id %>">
+                <input type="submit" value="Save" class="button">
+                <a class="button" href="/contacts">Cancel</a>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
