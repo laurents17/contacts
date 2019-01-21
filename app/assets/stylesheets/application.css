@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+  background-image: url("https://cdn.shopify.com/s/files/1/1413/2106/products/Vintage_Hand_Drawn_Notebook_Paper_12_x_12_ST_large.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+h1 {
+  font-family: "Courier New";
+  font-size: 56px;
+  padding: 1% 1% 1% 10%;
+  display: inline-block;
+  margin: 3% 1% 0% 1%;
+}
+
+h3 {
+  font-family: consolas;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0% 1% .5% 10%;
+  margin: 0% 1% 0% 1%;
+}
+
+
+div {
+  padding: 1% 2% 1% 10%; 
+  margin-left: 1%;
+}
+
+.new {
+  border: 5px solid black;
+}
+
+
+.contact {
+  font: 12px Consolas;
+  display: block;
+  padding: 0px;
+}
+
+.button {
+  font: bold 14px Consolas;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 3px 7px 3px 7px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  display: inline;
+}
+
+
+.search {
+  display: inline;
+  margin-left: 35%;
+}
+
+p {
+    font-family: consolas;
+    font-size: 12px;
+}
+
+input {
+  font-family: consolas;
+  border-radius: 6px;
+  display: inline;
+  padding: 3px;
+  margin: 1%;
+}
+
+form {
+    display: inline;
+}
